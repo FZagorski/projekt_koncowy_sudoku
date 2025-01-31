@@ -28,13 +28,11 @@ class GameActivity : AppCompatActivity() {
         chronometer.base = SystemClock.elapsedRealtime()
         chronometer.start()
 
-        // Dodanie przycisku do podpowiedzi
         val hintButton: Button = findViewById(R.id.hintButton)
         hintButton.setOnClickListener {
             provideHint()
         }
 
-        // Przycisk do zakończenia gry
         val finishGameButton: Button = findViewById(R.id.finishButton)
         finishGameButton.setOnClickListener {
             endGame()
